@@ -177,7 +177,7 @@ async def login():
 
         print("Giriş Yapılıyor")
         yeni_cl= Client()
-        yeni_cl.set_proxy("45.8.104.191:80")
+        yeni_cl.set_proxy("23.229.21.138:3128")
         cl.append(yeni_cl)
 
 
