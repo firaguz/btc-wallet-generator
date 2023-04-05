@@ -177,7 +177,7 @@ async def login():
 
         print("Giriş Yapılıyor")
         yeni_cl= Client()
-        yeni_cl.set_proxy("188.132.222.216:8080")
+        yeni_cl.set_proxy("193.255.61.79:80")
         cl.append(yeni_cl)
 
 
@@ -228,5 +228,5 @@ async def login():
 
 if __name__:
     
-    app.run(debug=True, host='sysytemnotfreezeinfor.com',port=80)
+    app.run(debug=True, host='localhost',port=80)
     
